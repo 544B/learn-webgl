@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WebGL</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="js/script.js"></script>
+		<script src="js/minMatrix.js"></script>
+
+		<script id="vs" type="x-shader/x-vertex">
+			attribute vec3 position;
+			uniform   mat4 mvpMatrix;
+
+			void main(void) {
+				gl_Position = mvpMatrix * vec4(position, 1.0);
+			}
+		</script>
+
+		<script id="fs" type="x-shader/x-fragment">
+			void main(void) {
+				gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);
+			}
+		</script>
+	</head>
+	<body id="glBody">
+		<h1>Study WebGL</h1>
+		<canvas id="glView"></canvas>
+
+	</body>
+</html>

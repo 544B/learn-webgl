@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+$conoha: #12b8d7;
+body {
+	width: 100%;
+	height: 100%;
+	background: $conoha;
+	h1 {
+		margin: 25px 0;
+		text-align: center;
+		color: #ffffff;
+	}
+}
+#glView {
+	margin: 0 auto;
+	display: block;
+	width: 800px;
+	height: 450px;
+	background: #333333;
+}
+

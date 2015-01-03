@@ -1,0 +1,16 @@
+{
+  "name": "gulp_sample",
+  "version": "0.0.1",
+  "description": "Gulp sample for GEEK",
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-load-plugins": "~0.5.3",
+    "gulp-connect": "^2.0.6",
+    "gulp-compass": "^1.1.9",
+    "gulp-htmlhint": "0.0.8",
+    "gulp-plumber": "~0.6.3",
+    "gulp-notify": "~1.4.0",
+    "gulp.spritesmith": "~1.1.1",
+    "gulp-shell": "~0.2.8"
+  }
+}
