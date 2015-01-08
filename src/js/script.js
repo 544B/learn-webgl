@@ -104,6 +104,32 @@
 			gl.bindBuffer(gl.ARRAY_BUFFER, null);
 			return vbo;
 		}
+
+		function torus(row, column, irad, orad) {
+			var pos = new Array(), col = new Array(), idx = new Array();
+			for(var i = 0; i <= row; i++){
+				var r = Math.PI * 2 / row * i;
+				var rr = Math.cos(r);
+				var ry = Math.sin(r);
+				for(var ii = 0; ii <= column; ii++){
+					var tr = Math.PI * 2 / column * ii;
+					var tx = (rr * irad + orad) * Math.cos(tr);
+					var ty = ry * irad;
+					var tz = (rr * irad + orad) * Math.sin(tr);
+					pos.push(tx, ty, tz);
+					var tc = hsva(360 / column * ii, 1, 1, 1);
+					col.push(tc[0], tc[1], tc[2], tc[3]);
+				}
+			}
+			for(i = 0; i < row; i++){
+				for(ii = 0; ii < column; ii++){
+					r = (column + 1) * i + ii;
+					idx.push(r, r + column + 1, r + 1);
+					idx.push(r + column + 1, r + column + 2, r + 1);
+				}
+			}
+			return [pos, col, idx];
+		}
 	};
 
 	win.addEventListener('load', win.app.start);
