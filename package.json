@@ -1,16 +1,17 @@
 {
-  "name": "gulp_sample",
+  "name": "learn-webgl",
   "version": "0.0.1",
-  "description": "Gulp sample for GEEK",
+  "description": "Learn WebGL",
   "devDependencies": {
     "gulp": "^3.8.6",
-    "gulp-load-plugins": "~0.5.3",
+    "gulp-compass": "^2.0.3",
     "gulp-connect": "^2.0.6",
-    "gulp-compass": "^1.1.9",
     "gulp-htmlhint": "0.0.8",
-    "gulp-plumber": "~0.6.3",
+    "gulp-jade": "^0.10.0",
+    "gulp-load-plugins": "~0.5.3",
     "gulp-notify": "~1.4.0",
-    "gulp.spritesmith": "~1.1.1",
-    "gulp-shell": "~0.2.8"
+    "gulp-plumber": "~0.6.3",
+    "gulp-shell": "~0.2.8",
+    "gulp.spritesmith": "~1.1.1"
   }
 }
