@@ -4,7 +4,7 @@
 	"description": "Learn WebGL",
 	"repository" : {
 		"type" : "git",
-		"url" : "https://github.com/lpcwww/learn-webgl.git"
+		"url" : "https://github.com/544B/learn-webgl.git"
 	},
 	"devDependencies": {
 		"gulp": "<=3.8.6",
